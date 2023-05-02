@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Head>
-      <title>Awesome Portfolio Built with Nextjs</title>
+      <title>Sam Fearon: Frontend Developer</title>
         <meta
           name="description"
           content="Explore CodeBucks's Next.js developer portfolio and 
@@ -35,12 +35,11 @@ export default function Home() {
                  />
                </div>
                <div className='flex flex-col items-center self-center w-1/2 lg:w-full lg:text-center'>
-                <AnimatedText text="Turning Vision Into Reality With Code And Design." className='!text-6xl !text-left 
+                <AnimatedText text="Designing digital solutions for practical challenges" className='!text-6xl !text-left 
                 xl:!text-5xl lg:!text-center lg:!text=6xl md:!text-5xl sm:!text-3xl
                 '/>
                 <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>
-                As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. 
-Explore my latest projects and articles, showcasing my expertise in React.js and web development.
+                A motivated and flexible front end developer with a drive to learn new skills and technologies. Driven by a desire to impact real world change through development. Explore my latest projects, showcasing my experience in a wide range of web technologies.
                 </p>
                 <div className='flex items-center self-start mt-2 lg:self-center'>
                   <Link href="/dummy.pdf" target={"_blank"}
@@ -52,7 +51,7 @@ Explore my latest projects and articles, showcasing my expertise in React.js and
                   hover:dark:border-light md:p-2 md:px-4 md:text-base
                   "
                   download={true}
-                  >Resume <LinkArrow className={"w-6 ml-1"}/>
+                  >CV <LinkArrow className={"w-6 ml-1"}/>
                   
                   </Link>
                   <Link href="mailto:abcd@gmail.com" target={"_blank"}
@@ -64,9 +63,7 @@ Explore my latest projects and articles, showcasing my expertise in React.js and
         </Layout>
 
         <HireMe />
-        <div className='absolute inline-block w-24 right-8 bottom-8 md:hidden'>
-          <Image src={lightBulb} alt="Codebucks" className='w-full h-auto' />
-        </div>
+        
       </main>
     </>
   )

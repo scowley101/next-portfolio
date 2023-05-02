@@ -16,12 +16,10 @@ import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
 
-const FeaturedProject = ({ type, title, summary, img, link, github }) => {
+const FeaturedProject = ({ type, title, summary, img, link, github, isButton }) => {
   return (
     <article
-      className="w-full flex items-center justify-between relative  rounded-br-2xl
-        rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light
-        lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4"
+      className="relative flex items-center justify-between w-full p-12 border border-solid shadow-2xl rounded-br-2xl rounded-3xl border-dark bg-light dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4"
     >
       <div
         className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light
@@ -31,7 +29,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
       <Link
         href={link}
         target="_blank"
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
+        className="w-1/2 overflow-hidden rounded-lg cursor-pointer lg:w-full"
       >
         <FramerImage
           src={img}
@@ -46,8 +44,8 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         />
       </Link>
 
-      <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
-        <span className="text-primary font-medium text-xl dark:text-primaryDark xs:text-base">
+      <div className="flex flex-col items-start justify-between w-1/2 pl-6 lg:w-full lg:pl-0 lg:pt-6">
+        <span className="text-xl font-medium text-primary dark:text-primaryDark xs:text-base">
           {type}
         </span>
         <Link
@@ -55,40 +53,35 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light lg:text-3xl xs:text-2xl">
+          <h2 className="w-full my-2 text-4xl font-bold text-left dark:text-light lg:text-3xl xs:text-2xl">
             {title}
           </h2>
         </Link>
         <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
           {summary}
         </p>
-        <div className="mt-2 flex items-center">
+        <div className="flex items-center mt-2">
           <Link href={github} target="_blank" className="w-10">
             {" "}
             <GithubIcon />
           </Link>
-          <Link
+         { isButton && <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold
-            dark:bg-light dark:text-dark
-            sm:px-4 sm:text-base
-            "
+            className="p-2 px-6 ml-4 text-lg font-semibold rounded-lg bg-dark text-light dark:bg-light dark:text-dark sm:px-4 sm:text-base "
           >
             Visit Project
-          </Link>
+          </Link>}
         </div>
       </div>
     </article>
   );
 };
 
-const Project = ({ title, type, img, link, github }) => {
+const Project = ({ title, type, img, link, github, summary }) => {
   return (
     <article
-      className="w-full flex flex-col items-center justify-center rounded-2xl 
-    border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light xs:p-4
-    "
+      className="relative flex flex-col items-center justify-center w-full p-6 border border-solid rounded-2xl border-dark bg-light dark:bg-dark dark:border-light xs:p-4 "
     >
       <div
         className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark
@@ -98,7 +91,7 @@ const Project = ({ title, type, img, link, github }) => {
       <Link
         href={link}
         target="_blank"
-        className="w-full cursor-pointer overflow-hidden rounded-lg"
+        className="w-full overflow-hidden rounded-lg cursor-pointer"
       >
         <FramerImage
           src={img}
@@ -109,8 +102,8 @@ const Project = ({ title, type, img, link, github }) => {
         />
       </Link>
 
-      <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary font-medium text-xl dark:text-primaryDark lg:text-lg md:text-base">
+      <div className="flex flex-col items-start justify-between w-full mt-4">
+        <span className="text-xl font-medium text-primary dark:text-primaryDark lg:text-lg md:text-base">
           {type}
         </span>
         <Link
@@ -118,12 +111,14 @@ const Project = ({ title, type, img, link, github }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
+          <h2 className="w-full my-2 text-3xl font-bold text-left lg:text-2xl">
             {title}
           </h2>
         </Link>
-
-        <div className="w-full flex items-center justify-between">
+      { summary && <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
+          {summary}
+        </p>}
+        <div className="flex items-center justify-between w-full">
           <Link
             href={link}
             target="_blank"
@@ -144,7 +139,7 @@ const projects = () => {
   return (
     <>
       <Head>
-        <title>Modern Portfolio Built with Nextjs | Projects Page</title>
+        <title>Sam Fearon: Projects Page</title>
         <meta
           name="description"
           content="Discover the latest webapp projects created by CodeBucks, a Next.js developer with 
@@ -152,29 +147,31 @@ const projects = () => {
         />
       </Head>
       <TransitionEffect />
-      <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
+      <main className="flex flex-col items-center justify-center w-full mb-16 dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
-            text="Imagination Trumps Knowledge!"
+            text="Some of my recent work"
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
 
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                type="Featured Project"
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
+                type="Coming soon..."
+                title="Quantababy"
+                summary="A web app to track my baby's sleep, feeding and nappy changes. Built with Express and Airtable on the backend and Next.js 13 client-side. Using Passport for authentication and Tailwind CSS for styling."
                 img={project1}
-                link="https://devdreaming.com/videos/build-crypto-screener-app-with-react-tailwind-css"
-                github="https://github.com/codebucks27/CryptoBucks-Final-Code"
+                link="https://github.com/scowley101/quantababy"
+                github="https://github.com/scowley101/quantababy"
+                isButton={false}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                type="Website Template"
-                title="NFT collection Website"
+                type="eCommerce Website"
+                title="Kinda Co Vegan Cheese"
                 img={project2}
+                summary="Shopify..."
                 link="https://devdreaming.com/videos/create-nft-collection-website-reactjs"
                 github="https://github.com/codebucks27/The-Weirdos-NFT-Website-Starter-Code"
               />
@@ -182,40 +179,41 @@ const projects = () => {
             <div className="col-span-6 sm:col-span-12">
               <Project
                 type="Website"
-                title="Fashion Studio Website"
+                title="Southwark Climate Justice Coalition"
                 img={project3}
+                summary="A website..."
                 link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
                 github="https://github.com/codebucks27/wibe-studio"
+              />
+            </div>
+
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Website proposal with design system"
+                img={project5}
+                title="Mama Buci Honey"
+                link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
+                github="https://github.com/codebucks27/wibe-studio"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Website design"
+                img={project6}
+                title="Cow + Field"
+                link="https://devdreaming.com"
+                github="https://github.com/codebucks27"
               />
             </div>
 
             <div className="col-span-12">
               <FeaturedProject
-                type="Portfolio Website"
-                title="React Portfolio Website"
-                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth page transitions, cool background effects, unique design and it is mobile responsive."
+                type="Website"
+                title="Commediate"
+                summary="A website..."
                 img={project4}
                 link="https://devdreaming.com/videos/build-stunning-portfolio-website-react-js-framer-motion"
                 github="https://github.com/codebucks27/react-portfolio-final"
-              />
-            </div>
-
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                type="Website Template"
-                img={project5}
-                title="Agency Website Template"
-                link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
-                github="https://github.com/codebucks27/wibe-studio"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                type="Blog Website"
-                img={project6}
-                title="DevDreaming"
-                link="https://devdreaming.com"
-                github="https://github.com/codebucks27"
               />
             </div>
           </div>
