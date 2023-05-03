@@ -6,9 +6,8 @@ import TransitionEffect from '@/components/TransitionEffect';
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link';
-import profilePic from "../../public/images/profile/developer-pic-1.png";
+import profilePic from "../../public/images/profile/computer-on-fire_transparent.png";
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
-
 
 export default function Home() {
   return (
@@ -47,7 +46,7 @@ export default function Home() {
                   rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
                   border-2 border-solid border-transparent hover:border-dark
                   
-                  dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light
+                  dark:bg-secondary dark:text-dark hover:dark:bg-dark hover:dark:text-light
                   hover:dark:border-light md:p-2 md:px-4 md:text-base
                   "
                   download={true}

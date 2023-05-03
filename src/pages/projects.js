@@ -5,12 +5,12 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
-import project2 from "../../public/images/projects/nft-collection-website-cover-image.jpg";
-import project3 from "../../public/images/projects/fashion-studio-website.jpg";
-import project4 from "../../public/images/projects/portfolio-cover-image.jpg";
-import project5 from "../../public/images/projects/agency-website-cover-image.jpg";
-import project6 from "../../public/images/projects/devdreaming.jpg";
+import quantababy from "../../public/images/projects/quantababy-insomnia.png";
+import kindaCo from "../../public/images/projects/kinda-co.png";
+import climateJustice from "../../public/images/projects/scjc.png";
+import commediate from "../../public/images/projects/commediate.png";
+import mamaBuci from "../../public/images/projects/mama-buci.png";
+import cowField from "../../public/images/projects/cow-and-field.png";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -160,7 +160,7 @@ const projects = () => {
                 type="Coming soon..."
                 title="Quantababy"
                 summary="A web app to track my baby's sleep, feeding and nappy changes. Built with Express and Airtable on the backend and Next.js 13 client-side. Using Passport for authentication and Tailwind CSS for styling."
-                img={project1}
+                img={quantababy}
                 link="https://github.com/scowley101/quantababy"
                 github="https://github.com/scowley101/quantababy"
                 isButton={false}
@@ -170,7 +170,7 @@ const projects = () => {
               <Project
                 type="eCommerce Website"
                 title="Kinda Co Vegan Cheese"
-                img={project2}
+                img={kindaCo}
                 summary="Shopify..."
                 link="https://devdreaming.com/videos/create-nft-collection-website-reactjs"
                 github="https://github.com/codebucks27/The-Weirdos-NFT-Website-Starter-Code"
@@ -180,7 +180,7 @@ const projects = () => {
               <Project
                 type="Website"
                 title="Southwark Climate Justice Coalition"
-                img={project3}
+                img={climateJustice}
                 summary="A website..."
                 link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
                 github="https://github.com/codebucks27/wibe-studio"
@@ -190,7 +190,7 @@ const projects = () => {
             <div className="col-span-6 sm:col-span-12">
               <Project
                 type="Website proposal with design system"
-                img={project5}
+                img={mamaBuci}
                 title="Mama Buci Honey"
                 link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
                 github="https://github.com/codebucks27/wibe-studio"
@@ -199,7 +199,7 @@ const projects = () => {
             <div className="col-span-6 sm:col-span-12">
               <Project
                 type="Website design"
-                img={project6}
+                img={cowField}
                 title="Cow + Field"
                 link="https://devdreaming.com"
                 github="https://github.com/codebucks27"
@@ -211,7 +211,7 @@ const projects = () => {
                 type="Website"
                 title="Commediate"
                 summary="A website..."
-                img={project4}
+                img={commediate}
                 link="https://devdreaming.com/videos/build-stunning-portfolio-website-react-js-framer-motion"
                 github="https://github.com/codebucks27/react-portfolio-final"
               />
