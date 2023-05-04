@@ -119,6 +119,7 @@ const Project = ({ title, type, img, link, github, summary }) => {
           {summary}
         </p>}
         <div className="flex items-center justify-between w-full">
+        {link && (
           <Link
             href={link}
             target="_blank"
@@ -126,9 +127,12 @@ const Project = ({ title, type, img, link, github, summary }) => {
           >
             Visit
           </Link>
+          )}
+          {github && (
           <Link href={github} target="_blank" className="w-8 md:w-6">
-            <GithubIcon />
+             <GithubIcon />
           </Link>
+          )}
         </div>
       </div>
     </article>
@@ -171,9 +175,9 @@ const projects = () => {
                 type="eCommerce Website"
                 title="Kinda Co Vegan Cheese"
                 img={kindaCo}
-                summary="Shopify..."
-                link="https://devdreaming.com/videos/create-nft-collection-website-reactjs"
-                github="https://github.com/codebucks27/The-Weirdos-NFT-Website-Starter-Code"
+                summary="A full website redesign for Kinda Co. I learnt Shopify's templating language Liquid to fully customise a theme for the client. I also managed the migration of hosting from Squarespace over to Shopify."
+                link="https://thekindaco.com/"
+                github="https://github.com/scowley101/kinda-dawn"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -181,9 +185,9 @@ const projects = () => {
                 type="Website"
                 title="Southwark Climate Justice Coalition"
                 img={climateJustice}
-                summary="A website..."
-                link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
-                github="https://github.com/codebucks27/wibe-studio"
+                summary="I built this website to help promote a local Climate Justice group that I organise with. I cloned the design of an existing website that had been built with a website builder free trial. I used the excellent Hull project as a starter which combines Next JS and Sanity CMS for a flexible and easy-to-use GUI for content editors while maintianing the speed and SEO benefits of a static site."
+                link="https://www.southwarkclimatejustice.com/"
+                github="https://github.com/scowley101/climate-justice-coalition"
               />
             </div>
 
@@ -192,8 +196,9 @@ const projects = () => {
                 type="Website proposal with design system"
                 img={mamaBuci}
                 title="Mama Buci Honey"
+                summary="I built a design system and proposed website designs for a small independent honey business. I used Figma and followed an atomic design approach to developing the system. Using Figma's component library I was able to quickly mock up a website design and create a prototype for the client to review."
                 link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
-                github="https://github.com/codebucks27/wibe-studio"
+               
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -201,19 +206,20 @@ const projects = () => {
                 type="Website design"
                 img={cowField}
                 title="Cow + Field"
-                link="https://devdreaming.com"
-                github="https://github.com/codebucks27"
+                link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
+                summary="I have been designing a new website for my event catering business, Cow + Field. I have build a design system, wireframes and initial mockups in Figma. I am currently working on the final designs and will be building the site with Next JS."
+         
               />
             </div>
 
             <div className="col-span-12">
               <FeaturedProject
-                type="Website"
+                type="Marketing Website"
                 title="Commediate"
-                summary="A website..."
+                summary="My first website building project was for a small consultancy, specialising in business mediation. I worked closely with the business owner Mike to understand his requirements and brand tone-of-voice. I created a number of different brand design approaches and built a simple marketing website using Gatsby with a Sanity CMS. I developed comprehensive documentation to help Mike to maintain the site himself and publish new blogs."
                 img={commediate}
-                link="https://devdreaming.com/videos/build-stunning-portfolio-website-react-js-framer-motion"
-                github="https://github.com/codebucks27/react-portfolio-final"
+                link="https://www.commediate.co.uk/"
+                github="https://github.com/scowley101/commediate-frontend"
               />
             </div>
           </div>

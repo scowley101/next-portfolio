@@ -13,12 +13,10 @@ export default function Home() {
   return (
     <>
       <Head>
-      <title>Sam Fearon: Frontend Developer</title>
+      <title>Sam Fearon | Frontend Developer</title>
         <meta
           name="description"
-          content="Explore CodeBucks's Next.js developer portfolio and 
-        discover the latest webapp projects and software engineering articles. 
-        Showcase your skills as a full-stack developer and software engineer."
+          content="Sam Fearon is a frontend developer based in London, UK."
         />
       </Head>
       <TransitionEffect />
@@ -26,7 +24,7 @@ export default function Home() {
         <Layout className='pt-0 md:pt-16 sm:pt-16'>
            <div className="flex items-center justify-between w-full lg:flex-col">
                <div className='w-1/2 md:w-full'>
-                <Image src={profilePic} alt="CodeBucks" className='w-full h-auto lg:hidden md:inline-block md:w-full'
+                <Image src={profilePic} alt="An image created with Midjourney AI. Prompt: a flat vector logo of a 90s computer with neon flames exploding from the screen in a vaporwave style" className='w-full h-auto lg:hidden md:inline-block md:w-full'
                 priority
                 sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
@@ -41,7 +39,7 @@ export default function Home() {
                 A motivated and flexible front end developer with a drive to learn new skills and technologies. Driven by a desire to impact real world change through development. Explore my latest projects, showcasing my experience in a wide range of web technologies.
                 </p>
                 <div className='flex items-center self-start mt-2 lg:self-center'>
-                  <Link href="/dummy.pdf" target={"_blank"}
+                  <Link href="/sam-fearon_cv" target={"_blank"}
                   className="flex items-center bg-dark text-light p-2.5 px-6
                   rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
                   border-2 border-solid border-transparent hover:border-dark
@@ -53,7 +51,7 @@ export default function Home() {
                   >CV <LinkArrow className={"w-6 ml-1"}/>
                   
                   </Link>
-                  <Link href="mailto:abcd@gmail.com" target={"_blank"}
+                  <Link href="mailto:sfcowley@gmail.com" target={"_blank"}
                   className="ml-4 text-lg font-medium underline capitalize text-dark dark:text-light md:text-base"
                   >Contact</Link>
                 </div>

@@ -38,10 +38,8 @@ const about = () => {
   return (
     <>
       <Head>
-      <title>Minimal Portfolio Built with Nextjs | About Page</title>
-        <meta name="description" content="Learn more about CodeBucks, a Next.js developer with a passion for 
-        creating innovative solutions. Discover tips for building a developer portfolio and insights on 
-        full-stack development, front-end development, and back-end development." />
+      <title>Sam Fearon, Front End Developer | About Page</title>
+        <meta name="description" content="Read about Sam Fearon's background as a Chef and his transition into the world of web development." />
       </Head>
       <TransitionEffect />
       <main className="flex flex-col items-center justify-center w-full dark:text-light">
@@ -56,25 +54,15 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium">
-                Hi, I&apos;m CodeBucks, a web developer and UI/UX designer with a
-                passion for creating beautiful, functional, and user-centered
-                digital experiences. With 4 years of experience in the field. I
-                am always looking for new and innovative ways to bring my
-                clients&apos; visions to life.
+               Hi, I'm Sam Cowley, a front-end developer with a passion for creating clean, user-friendly interfaces and crafting intuitive digital experiences. 
               </p>
 
               <p className="my-4 font-medium">
-                I believe that design is about more than just making things look
-                pretty – it&apos;s about solving problems and creating intuitive,
-                enjoyable experiences for users.
+                With a diverse range of experience across various fields and roles, I have honed my problem-solving skills and developed a strong ability to communicate with people from all backgrounds. I believe that design is not just about aesthetics but also about functionality and usability. 
               </p>
 
               <p className="font-medium">
-                Whether I&apos;m working on a website, mobile app, or other digital
-                product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
+                I am constantly striving to stay up-to-date with the latest technologies and frameworks to ensure that I can bring the best possible solutions to my clients. Let's work together to create something great.
               </p>
             </div>
 
@@ -84,7 +72,7 @@ const about = () => {
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
               <Image
                 src={profilePic}
-                alt="Codebucks"
+                alt="Sam Fearon"
                 className="w-full h-auto rounded-2xl"
                 priority
                 sizes="(max-width: 768px) 100vw,
@@ -96,42 +84,42 @@ const about = () => {
             <div className="flex flex-col items-end justify-between col-span-2 xl:col-span-8 xl:flex-row xl:items-center md:order-3">
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block font-bold text-7xl md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumbers value={50} />+
+                  <AnimatedNumbers value={20} />+
                 </span>
                 <h2
                   className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm"
                 >
-                  satisfied clients
+                  weddings catered
                 </h2>
               </div>
 
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block font-bold text-7xl md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumbers value={40} />+
+                  <AnimatedNumbers value={2} />+
                 </span>
                 <h2
                   className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm"
                 >
-                  projects completed
+                  years of programming
                 </h2>
               </div>
 
               <div className="flex flex-col items-end justify-center xl:items-center">
-                <span className="inline-block font-bold text-7xl md:text-6xl sm:text-5xl xs:text-4xl">
+                {/* <span className="inline-block font-bold text-7xl md:text-6xl sm:text-5xl xs:text-4xl">
                   <AnimatedNumbers value={4} />+
                 </span>
                 <h2
                   className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm"
                 >
                   years of experience
-                </h2>
+                </h2> */}
               </div>
             </div>
           </div>
 
           <Skills />
           <Experience />
-          <Education />
+          {/* <Education /> */}
         </Layout>
       </main>
     </>

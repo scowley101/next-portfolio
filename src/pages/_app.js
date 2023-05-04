@@ -2,7 +2,7 @@ import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 import "@/styles/globals.css";
 import { AnimatePresence } from "framer-motion";
-import { Montserrat } from "next/font/google";
+import { Montserrat, Ubuntu, Merriweather, Lato } from "next/font/google";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
@@ -11,16 +11,39 @@ const montserrat = Montserrat({
   variable: "--font-mont",
 });
 
+const ubuntu = Ubuntu({
+  subsets: ["latin"],
+  variable: "--font-ubuntu",
+  weight: "300",
+});
+
+const ubuntuBold = Ubuntu({
+  subsets: ["latin"],
+  variable: "--font-ubuntu-bold",
+  weight: "500",
+});
+
+const merriweather = Merriweather({
+  subsets: ["latin"],
+  variable: "--font-merriweather",
+  weight: "300",
+});
+const lato = Lato({
+  subsets: ["latin"],
+  variable: "--font-lato",
+  weight: "300",
+});
+
 export default function App({ Component, pageProps }) {
   const router = useRouter();
   return (
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/fearon-favicon.png" />
       </Head>
       <main
-        className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen`}
+        className={`${montserrat.variable} ${lato.variable}  ${merriweather.variable} ${ubuntu.variable} ${ubuntuBold.variable} bg-light dark:bg-dark w-full min-h-screen`}
       >
         <NavBar />
         <AnimatePresence initial={false} mode="wait">

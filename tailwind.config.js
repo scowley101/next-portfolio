@@ -14,6 +14,10 @@ module.exports = {
     extend: {
       fontFamily: {
         mont: ['var(--font-mont)', ...fontFamily.sans],
+        body: ['var(--font-ubuntu)', ...fontFamily.sans],
+        heading: ['var(--font-ubuntu-bold)', ...fontFamily.sans],
+        merri: ['var(--font-merriweather)', ...fontFamily.serif],
+        lato: ['var(--font-lato)', ...fontFamily.sans],
       },
       colors:{
         dark: "#1e1c1d", //black

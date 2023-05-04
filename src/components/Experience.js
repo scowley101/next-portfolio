@@ -13,20 +13,20 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
       whileInView={{y:0}}
       transition={{duration:0.5, type:"spring"}}
       >
-        <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
+        <h3 className="text-2xl font-bold capitalize sm:text-xl xs:text-lg">
           {position}&nbsp;
           <a
             href={companyLink}
             target="_blank"
-            className="text-primary dark:text-primaryDark capitalize"
+            className="capitalize text-primary dark:text-primaryDark"
           >
             @{company}
           </a>
         </h3>
-        <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
-          {time} | {address}
+        <span className="font-medium capitalize text-dark/75 dark:text-light/75 xs:text-sm">
+          {time} {address && `| ${address}`}
         </span>
-        <p className="font-medium w-full md:text-sm">{work}</p>
+        <p className="w-full font-medium md:text-sm">{work}</p>
       </motion.div>
     </li>
   );
@@ -42,7 +42,7 @@ const Experience = () => {
     )
   return (
     <div className="my-64">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
+      <h2 className="w-full mb-32 font-bold text-center text-8xl md:text-6xl xs:text-4xl md:mb-16">
         Experience
       </h2>
 
@@ -54,58 +54,38 @@ style={{scaleY: scrollYProgress}}
   md:w-[2px] md:left-[30px] xs:left-[20px] dark:bg-primaryDark dark:shadow-3xl
   "  />
 
-        <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
+        <ul className="flex flex-col items-start justify-between w-full ml-4 xs:ml-2">
         <Details
-              position="Software Engineer"
-              company="Google"
-              companyLink="https://google.com"
-              time="2022-Present"
-              address="Mountain View, CA"
-              work="Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+              position="Kitchen Consultant"
+              company="Orri"
+              companyLink="https://www.orri-uk.com/"
+              time="02/2023 - Present"
+              work="I have been working closely with Orri's team to improve their kitchen
+              processes and design. Through identifying opportunities for improvement and implementing tests and feedback, I have been helping to develop a streamlined kitchen setup and menu, which will be in place for the opening of Orri's new location this summer.sss"
             />
 
             <Details
-              position="Intern"
-              company="Facebook"
-              companyLink="https://facebook.com"
-              time="Summer 2021"
-              address="Menlo Park, CA."
-              work="Worked on a team responsible for developing a new mobile app
-              feature that allowed users to create and share short-form video
-              content, including designing and implementing a new user interface
-              and developing the backend infrastructure to support the feature."
+              position="Front End Developer"
+              company="Freelance"
+              companyLink="https://fearon.io"
+              time="01/2022 - Present"
+              work="I have worked on a variety of projects, ranging from small businesses to community groups. This has allowed me to develop my skills in a wide range of techniques and frameworks, including Gatsby, Next.js, GraphQL, REST APIs, Shopify, Sanity CMS, and Netlify, and to hone my problem- solving skills through iterative testing and learning."
             />
 
             <Details
-              position="Software Developer"
-              company="Amazon"
-              companyLink="https://amazon.com"
-              time="2020-2021"
-              address="Seattle, WA."
-              work="Worked on a team responsible for developing Amazon's mobile app, including implementing new features such as product recommendations and user reviews, and optimizing the app's performance and reliability."
+              position="Co Founder"
+              company="Cow + Field"
+              companyLink="https://instagram.com/cowandfield"
+              time="12/2017 - Present"
+              work="As Co-Founder of Cow + Field, I successfully ran and grew a successful event catering business with a focus on large-scale weddings, corporate events, and private catering. My responsibilities included menu design, recruitment and management of kitchen staff, tracking and reporting gross profit, implementing and managing the HACCP plan, ordering, and customer service."
             />
 
             <Details
-              position="Software Developer Intern"
-              company="Microsoft"
-              companyLink="https://microsoft.com"
-              time="Summer 2019"
-              address="Redmond, WA."
-              work="Worked on a team responsible for developing new features for
-              Microsoft's Windows operating system, including implementing a new
-              user interface for a system settings panel and optimizing the
-              performance of a core system component."
-            />
-
-            <Details
-              position="Teaching Assistant"
-              company="MIT"
-              companyLink="https://mit.edu"
-              time="Fall 2018"
-              address="Massachusetts Ave, Cambridge, MA."
-              work="Assisted in teaching a course on computer programming, held office
-              hours to help students with assignments, and graded exams and
-              assignments."
+              position="Customer Journey Manager"
+              company="Bupa"
+              companyLink="https://www.bupa.co.uk/"
+              time="12/2013 - 05/2015"
+              work="I was responsible for managing the websites of Bupa’s Health Assessments and Care Services businesses respectively. During my tenure, I led a number of digital transformation projects that increased traffic and leads to these key areas while improving the user experience. I am highly skilled in web design, user experience and project management."
             />
         </ul>
       </div>
