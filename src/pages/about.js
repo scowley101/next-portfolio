@@ -54,7 +54,7 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium">
-               Hi, I'm Sam Cowley, a front-end developer with a passion for creating clean, user-friendly interfaces and crafting intuitive digital experiences. 
+               Hi, I&apos;m Sam Cowley, a front-end developer with a passion for creating clean, user-friendly interfaces and crafting intuitive digital experiences. 
               </p>
 
               <p className="my-4 font-medium">
@@ -62,7 +62,7 @@ const about = () => {
               </p>
 
               <p className="font-medium">
-                I am constantly striving to stay up-to-date with the latest technologies and frameworks to ensure that I can bring the best possible solutions to my clients. Let's work together to create something great.
+                I am constantly striving to stay up-to-date with the latest technologies and frameworks to ensure that I can bring the best possible solutions to my clients. Let&apos;s work together to create something great.
               </p>
             </div>
 
