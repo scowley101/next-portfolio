@@ -199,7 +199,7 @@ const projects = () => (
               img={mamaBuci}
               title="Mama Buci Honey"
               summary="I built a design system and proposed website designs for an independent honey business. I used Figma and followed an atomic design approach to developing the system. Using Figma's component library I was able to quickly mock up a website design and create a prototype for the client to review."
-              link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
+              link="/projects/mamabuci"
             />
           </div>
           <div className="col-span-6 sm:col-span-12">
@@ -207,7 +207,7 @@ const projects = () => (
               type="Website design"
               img={cowField}
               title="Cow + Field"
-              link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
+              link="/projects/cowandfield"
               summary="I have been designing a new website for my event catering business, Cow + Field. I have build a design system, wireframes and initial mockups in Figma. I am currently working on the final designs and will be building the site with Next JS."
             />
           </div>
