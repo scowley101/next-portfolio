@@ -227,6 +227,6 @@ const projects = () => (
     </main>
   </>
 );
-props;
+
 
 export default projects;
