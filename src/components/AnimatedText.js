@@ -1,55 +1,54 @@
-import React from 'react'
-import {motion} from "framer-motion"
+import React from 'react';
+import { motion } from 'framer-motion';
 
 const quote = {
-    initial:{
-        opacity:1,
+  initial: {
+    opacity: 1,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      delay: 0.5,
+      staggerChildren: 0.08,
     },
-    animate:{
-        opacity:1,
-        transition:{
-            delay:0.5,
-            staggerChildren: 0.08,
-        }
-    }
-}
+  },
+};
 
 const singelWord = {
-    initial:{
-        opacity:0,
-        y:50,
+  initial: {
+    opacity: 0,
+    y: 50,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
     },
-    animate:{
-        opacity:1,
-        y:0,
-        transition:{
-            duration:1
-        }
-    }
-}
+  },
+};
 
-const AnimatedText = ({text, className=""}) => {
-  return (
-    <div className='flex items-center justify-center w-full py-2 mx-auto overflow-hidden text-center sm:py-0 '>
-        <motion.h1 className={`inline-block w-full text-dark font-bold capitalize text-8xl  
+const AnimatedText = ({ text, className = '' }) => (
+  <div className="flex items-center justify-center w-full py-2 mx-auto overflow-hidden text-center sm:py-0 ">
+    <motion.h1
+      className={`inline-block w-full text-dark font-bold capitalize text-8xl  
         dark:text-light
         ${className}`}
-        variants={quote}
-        initial="initial"
-        animate="animate"
+      variants={quote}
+      initial="initial"
+      animate="animate"
+    >
+      {text.split(' ').map((word, index) => (
+        <motion.span
+          key={`${word}-${index}`}
+          className="inline-block"
+          variants={singelWord}
         >
-        {
-            text.split(" ").map((word, index) => 
-            <motion.span key={word+'-'+index} className="inline-block"
-            variants={singelWord}
-            >
-                {word}&nbsp;
-            </motion.span>
-            )
-        }
-        </motion.h1>
-    </div>
-  )
-}
+          {word}&nbsp;
+        </motion.span>
+      ))}
+    </motion.h1>
+  </div>
+);
 
-export default AnimatedText
+export default AnimatedText;

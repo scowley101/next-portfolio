@@ -1,37 +1,37 @@
-import Footer from "@/components/Footer";
-import NavBar from "@/components/NavBar";
-import "@/styles/globals.css";
-import { AnimatePresence } from "framer-motion";
-import { Montserrat, Ubuntu, Merriweather, Lato } from "next/font/google";
-import Head from "next/head";
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router';
+import Head from 'next/head';
+import '../styles/globals.css';
+import { AnimatePresence } from 'framer-motion';
+import { Montserrat, Ubuntu, Merriweather, Lato } from 'next/font/google';
+import Footer from '../components/Footer';
+import NavBar from '../components/NavBar';
 
 const montserrat = Montserrat({
-  subsets: ["latin"],
-  variable: "--font-mont",
+  subsets: ['latin'],
+  variable: '--font-mont',
 });
 
 const ubuntu = Ubuntu({
-  subsets: ["latin"],
-  variable: "--font-ubuntu",
-  weight: "300",
+  subsets: ['latin'],
+  variable: '--font-ubuntu',
+  weight: '300',
 });
 
 const ubuntuBold = Ubuntu({
-  subsets: ["latin"],
-  variable: "--font-ubuntu-bold",
-  weight: "500",
+  subsets: ['latin'],
+  variable: '--font-ubuntu-bold',
+  weight: '500',
 });
 
 const merriweather = Merriweather({
-  subsets: ["latin"],
-  variable: "--font-merriweather",
-  weight: "300",
+  subsets: ['latin'],
+  variable: '--font-merriweather',
+  weight: '300',
 });
 const lato = Lato({
-  subsets: ["latin"],
-  variable: "--font-lato",
-  weight: "300",
+  subsets: ['latin'],
+  variable: '--font-lato',
+  weight: '300',
 });
 
 export default function App({ Component, pageProps }) {
