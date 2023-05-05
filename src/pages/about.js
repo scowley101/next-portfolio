@@ -38,7 +38,7 @@ const about = () => {
   return (
     <>
       <Head>
-      <title>Sam Fearon, Front End Developer | About Page</title>
+      <title>Sam Fearon | About Page</title>
         <meta name="description" content="Read about Sam Fearon's background as a Chef and his transition into the world of web development." />
       </Head>
       <TransitionEffect />
@@ -54,15 +54,18 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium">
-               Hi, I&apos;m Sam Cowley, a front-end developer with a passion for creating clean, user-friendly interfaces and crafting intuitive digital experiences. 
+              Hi, I&apos;m Sam. You may have come across me going by the name of Cowley. Fearon is my married name.
               </p>
 
               <p className="my-4 font-medium">
-                With a diverse range of experience across various fields and roles, I have honed my problem-solving skills and developed a strong ability to communicate with people from all backgrounds. I believe that design is not just about aesthetics but also about functionality and usability. 
+              I have been a Chef for 8 years and a Developer for 3. Before these recent career iterations I was a Product Owner. This might seem like an odd mix, but this range of experience has honed my problem-solving skills and developed a strong ability to communicate with people from all fields.              </p>
+
+              <p className="font-medium">
+              Learning Javascript in 2020 felt like gaining a superpower. Having spent much of the last decade delivering events under extreme pressure (think 200 person wedding...in a field...only half the staff have turned up...the fire pit hasn't been dug...and now it&apos;s raining); I now had a set of tools which would multliply these hard won problems solving skills in prioritisation, creativity and iteration.
               </p>
 
               <p className="font-medium">
-                I am constantly striving to stay up-to-date with the latest technologies and frameworks to ensure that I can bring the best possible solutions to my clients. Let&apos;s work together to create something great.
+              I love learning new skills, so will always jump at the opportunity to exerience new technologies or frameworks. If you think I can help with your project, please feel free to reach out to me.
               </p>
             </div>
 

@@ -47,12 +47,12 @@ const Skills = () => {
         <Skill name="Figma" x="0vw" y="-20vw" />
         <Skill name="Airtable" x="-25vw" y="18vw" />
         <Skill name="Tailwind CSS" x="28vw" y="18vw" />
-        <Skill name="Sanity CMS" x="28vw" y="18vw" />
-        <Skill name="GraphQL" x="28vw" y="18vw" />
-        <Skill name="Rest API" x="28vw" y="18vw" />
-        <Skill name="Netlify" x="28vw" y="18vw" />
-        <Skill name="Styled Components" x="28vw" y="18vw" />
-        <Skill name="Semantic HTML" x="28vw" y="18vw" />
+        <Skill name="Sanity CMS" x="38vw" y="6vw" />
+        <Skill name="GraphQL" x="28vw" y="-19vw" />
+        <Skill name="Rest API" x="-23vw" y="-7vw" />
+        <Skill name="Netlify" x="20vw" y="-5vw" />
+        <Skill name="Styled Components" x="-35vw" y="12vw" />
+        <Skill name="Semantic HTML" x="5vw" y="26vw" />
       </div>
     </>
   );

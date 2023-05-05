@@ -13,10 +13,10 @@ export default function Home() {
   return (
     <>
       <Head>
-      <title>Sam Fearon | Frontend Developer</title>
+      <title>Sam Fearon | Front End Developer</title>
         <meta
           name="description"
-          content="Sam Fearon is a frontend developer based in London, UK."
+          content="Sam Fearon is a Front End Developer based in London, UK."
         />
       </Head>
       <TransitionEffect />
@@ -36,7 +36,7 @@ export default function Home() {
                 xl:!text-5xl lg:!text-center lg:!text=6xl md:!text-5xl sm:!text-3xl
                 '/>
                 <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>
-                A motivated and flexible front end developer with a drive to learn new skills and technologies. Driven by a desire to impact real world change through development. Explore my latest projects, showcasing my experience in a wide range of web technologies.
+                A motivated and flexible front end developer eager to learn new skills and technologies. Driven by a desire to impact real world change through development. Explore my latest projects, showcasing my experience in a wide range of web technologies.
                 </p>
                 <div className='flex items-center self-start mt-2 lg:self-center'>
                   <Link href="/sam-fearon_cv.pdf" target={"_blank"}
