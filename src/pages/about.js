@@ -74,7 +74,7 @@ const about = () => (
               pressure (think 200 person wedding...in a field...only half the
               staff have turned up...the fire pit hasn't been dug...and now
               it&apos;s raining); I now had a set of tools which would multliply
-              these hard won problems solving skills in prioritisation,
+              these hard won problem solving skills in prioritisation,
               creativity and iteration.
             </p>
 

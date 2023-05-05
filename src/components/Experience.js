@@ -62,7 +62,7 @@ const Experience = () => {
             companyLink="https://www.orri-uk.com/"
             time="02/2023 - Present"
             work="I have been working closely with Orri's team to improve their kitchen
-              processes and design. Through identifying opportunities for improvement and implementing tests and feedback, I have been helping to develop a streamlined kitchen setup and menu, which will be in place for the opening of Orri's new location this summer.sss"
+              processes and design. Through identifying opportunities for improvement and implementing tests and feedback, I have been helping to develop a streamlined kitchen setup and menu, which will be in place for the opening of Orri's new location this summer."
           />
 
           <Details
