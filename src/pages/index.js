@@ -60,7 +60,7 @@ export default function Home() {
                   "
                   download
                 >
-                  CV <LinkArrow className="w-6 ml-1" />
+                  CV <LinkArrow className="w-6 h-6 ml-1" />
                 </Link>
                 <Link
                   href="mailto:sfcowley@gmail.com"
