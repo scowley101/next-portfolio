@@ -7,7 +7,6 @@ import { LinkArrow } from '../components/Icons';
 import Layout from '../components/Layout';
 import TransitionEffect from '../components/TransitionEffect';
 import profilePic from '../../public/images/profile/computer-on-fire_transparent.png';
-import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg';
 
 export default function Home() {
   return (
@@ -60,7 +59,7 @@ export default function Home() {
                   "
                   download
                 >
-                  CV <LinkArrow className="w-6 h-6 ml-1" />
+                CV <LinkArrow className="w-6 ml-1 md:w-6" />
                 </Link>
                 <Link
                   href="mailto:sfcowley@gmail.com"

@@ -11,6 +11,12 @@ const montserrat = Montserrat({
   variable: '--font-mont',
 });
 
+const montserratBold = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-mont-bold',
+  weight: '500',
+});
+
 const ubuntu = Ubuntu({
   subsets: ['latin'],
   variable: '--font-ubuntu',
@@ -41,9 +47,13 @@ export default function App({ Component, pageProps }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/fearon-favicon.png" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <main
-        className={`${montserrat.variable} ${lato.variable}  ${merriweather.variable} ${ubuntu.variable} ${ubuntuBold.variable} bg-light dark:bg-dark w-full min-h-screen`}
+        className={`${montserrat.variable} ${montserratBold.variable} ${lato.variable}  ${merriweather.variable} ${ubuntu.variable} ${ubuntuBold.variable} bg-light dark:bg-dark w-full min-h-screen`}
       >
         <NavBar />
         <AnimatePresence initial={false} mode="wait">
