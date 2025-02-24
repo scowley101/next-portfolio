@@ -188,7 +188,7 @@ const projects = () => (
               title="Southwark Climate Justice Coalition"
               img={climateJustice}
               summary="I built this website to help promote a local Climate Justice group that I organise with. I cloned the design of an existing website that had been built with a website builder free trial. I used the excellent Hull project starter which combines Next JS and Sanity CMS for a flexible and easy-to-use GUI for content editors while maintianing the speed and SEO benefits of a static site."
-              link="https://www.southwarkclimatejustice.com/"
+              link="https://www.southwarkclimatejustice.org/"
               github="https://github.com/scowley101/climate-justice-coalition"
             />
           </div>
