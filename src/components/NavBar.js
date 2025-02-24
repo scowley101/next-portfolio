@@ -117,7 +117,7 @@ const NavBar = () => {
             <GithubIcon />
           </motion.a>
           <motion.a
-            href="https://www.linkedin.com/in/sam-cowley-577a892a/"
+            href="https://www.linkedin.com/in/sam-fearon-577a892a/"
             target="_blank"
             className="w-6 mx-3"
             whileHover={{ y: -2 }}
